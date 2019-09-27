@@ -1,0 +1,52 @@
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 200px;
+  margin: 10px 0 0 10px;
+}
+
+.menu {
+  padding-right: 30px;
+  width: 100px;
+}
+
+.menu-profile  {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu:hover .menu-items {
+  display: block;
+}
+
+.menu-profile img {
+  width: 30px;
+}
+
+.menu-items {
+  position: absolute;
+  display: none;
+}
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-items a:hover {
+  text-decoration: underline;
+}

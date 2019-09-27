@@ -1,0 +1,33 @@
+@import './Variables.scss';
+
+body {
+  margin: 0;
+  background-color: $primary-color;
+  font-family: $theme-font;
+  color: white;
+}
+
+.general-input {
+  height: 60px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 40px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+::placeholder {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+
+.general-input:focus {
+  outline: none;
+}
+
+input[type='text'] {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
