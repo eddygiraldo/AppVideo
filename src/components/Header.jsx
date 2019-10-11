@@ -14,10 +14,10 @@ const Header = () => (
       <div className='menu-items'>
         <ul>
           <li>
-            <a href='/'>Cuentas</a>
+            <a href='/login'>Login</a>
           </li>
           <li>
-            <a href='/'>Cerrar sesión</a>
+            <a href='/'>Registrate</a>
           </li>
         </ul>
       </div>

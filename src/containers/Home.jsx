@@ -10,10 +10,10 @@ import '../assets/styles/App.scss';
 
 const API = 'http://localhost:3000/initalState';
 
-const App = () => {
+const Home = () => {
   const initialState = useInitialState(API);
   return initialState.length === 0 ? <h1>Loading...</h1> : (
-    <div className='App'>
+    <div className='app'>
       <Header />
       <Search />
       {
@@ -22,8 +22,7 @@ const App = () => {
           <Categories title='Mi Lista'>
             <Carousel>
               {
-                initialState.mylist.map((item) =>
-                  <CarouselItem key={item.id} {...item} />)
+                initialState.mylist.map((item) => <CarouselItem key={item.id} {...item} />)
               }
             </Carousel>
           </Categories>
@@ -33,8 +32,7 @@ const App = () => {
       <Categories title='Tendencias'>
         <Carousel>
           {
-            initialState.trends.map((item) =>
-              <CarouselItem key={item.id} {...item} />)
+            initialState.trends.map((item) => <CarouselItem key={item.id} {...item} />)
           }
 
         </Carousel>
@@ -43,8 +41,7 @@ const App = () => {
       <Categories title='Originales'>
         <Carousel>
           {
-            initialState.originals.map((item) =>
-              <CarouselItem key={item.id} {...item} />)
+            initialState.originals.map((item) => <CarouselItem key={item.id} {...item} />)
           }
         </Carousel>
       </Categories>
@@ -54,4 +51,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
