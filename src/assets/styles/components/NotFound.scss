@@ -1,0 +1,38 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#21C08B, #8F57ED);
+  height: calc(100vh - 200px);
+  text-align: center
+}
+
+.not-found-container p {
+  font-size: 120px;
+  margin: 0 auto;
+}
+
+.not-found-container span {
+  font-size: 20px;
+  padding-top:50px;
+  display: block;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+}
